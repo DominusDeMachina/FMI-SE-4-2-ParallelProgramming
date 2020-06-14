@@ -1,9 +1,12 @@
 TITLE
-
-smallpt: Global Illumination in 99 lines of C++
+Parallel Programming
 
 CREDITS
+Author: Gennadiy Furduy
 
+BASED ON:
+
+smallpt: Global Illumination in 99 lines of C++
 Author: Kevin Beason (kevin.beason [at] gmail.com)
 Date: 10/11/2008
 
@@ -15,6 +18,8 @@ by solving the rendering equation, including ideal Lambertian, specular, and
 dielectric reflection, area lights, anti-aliasing, importance sampling, and
 multi-threading. It is only 99 lines of C++, but illustrates photo realistic
 rendering in a correct, and concise manner.
+
+Project was modified with OpenMP library for parallel computing.
 
 DESCRIPTION
 
