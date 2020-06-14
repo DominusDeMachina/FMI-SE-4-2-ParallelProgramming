@@ -12,11 +12,11 @@ public class Main {
         final long startTime = System.nanoTime();
         Random random = new Random();
 
-        int width = 640;
-        int height = 480;
+        final int width = 640;
+        final int height = 480;
 
-        File traceResultFile = new File("TraceResult.png");
-        BufferedImage bufferedImage = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
+        final File traceResultFile = new File("TraceResult.png");
+        final BufferedImage bufferedImage = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
 
         for (int y = 0; y < height; y++) {
             for (int x = 0; x < width; x++) {
