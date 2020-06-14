@@ -1,0 +1,5 @@
+samples 100
+
+with OpenMP    without OpenMP
+2:09.25        7:34.34
+
