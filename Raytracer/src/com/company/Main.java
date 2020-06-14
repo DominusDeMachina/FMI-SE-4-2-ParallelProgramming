@@ -1,17 +1,23 @@
 package com.company;
 
+import java.util.Arrays;
+
 public class Main {
 
     public static void main(String[] args) {
-        var startTime = System.nanoTime();
+        final long startTime = System.nanoTime();
 
-        var width = 640;
-        var height = 480;
+        int width = 640;
+        int height = 480;
 
         for (int y = 0; y < height; y++) {
             for (int x = 0; x < width; x++) {
                 // add pixel color
             }
         }
+
+        final long endTime = System.nanoTime();
+
+        System.out.println("Work time: " + (endTime-startTime)/1000000000.0F);
     }
 }
