@@ -27,13 +27,19 @@ public class Main {
 
         for (int y = 0; y < height; y++) {
             for (int x = 0; x < width; x++) {
-                Ray ray = new Ray(new Point3D(x - width / 2 + .5, y - height / 2 + .5, 100),
-                        new Vector3D(0.0, 0.0, -1.0));
-                if (sphere1.intersect(ray) != 0.0) {
-                    bufferedImage.setRGB(x, y, sphere1.color.toInteger());
-                } else {
-                    bufferedImage.setRGB(x, y, 0);
+                Color color = new Color(0.0F, 0.0F, 0.0F);
+                for (int row = 0; row < 8; row++) {
+                    for (int col = 0; col < 8; col++) {
+                        Ray ray = new Ray(
+                                new Point3D(x - width / 2 + (col + 0.5) / 8, y - height / 2 + (col + 0.5) / 8, 100),
+                                new Vector3D(0.0, 0.0, -1.0));
+                        if (sphere1.intersect(ray) != 0.0) {
+                            color.add(sphere1.color);
+                        }
+                    }
                 }
+                color.divide(64);
+                bufferedImage.setRGB(x, y, color.toInteger());
             }
         }
 
