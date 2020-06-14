@@ -1,4 +1,4 @@
-package com.company.gfx;
+package com.company.primitives;
 
 public class Ray {
   public Point3D origin;

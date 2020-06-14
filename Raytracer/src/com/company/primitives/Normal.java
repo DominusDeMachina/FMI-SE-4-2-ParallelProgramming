@@ -1,4 +1,4 @@
-package com.company.gfx;
+package com.company.primitives;
 
 public class Normal {
   public double x, y, z;
@@ -15,10 +15,10 @@ public class Normal {
     this.z = z;
   }
 
-  public Normal(Point2D point) {
-    this.x = point.x;
-    this.y = point.y;
-    this.z = point.z;
+  public Normal(Normal normal) {
+    this.x = normal.x;
+    this.y = normal.y;
+    this.z = normal.z;
   }
 
   public double dot(Normal normal) {

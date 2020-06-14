@@ -1,4 +1,4 @@
-package com.company.gfx;
+package com.company.primitives;
 
 public class Point2D {
     public double x, y, z;
